@@ -12,5 +12,9 @@ include:
     artifact-name: velvet_v3_ui_left_logging-ergohaven-zmk
   - board: ergohaven
     shield: velvet_v3_ui_right
+    cmake-args: -DCONFIG_ZMK_SETTINGS_RESET_ON_START=y
+    artifact-name: velvet_v3_ui_right_settings_reset-ergohaven-zmk
+  - board: ergohaven
+    shield: velvet_v3_ui_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
