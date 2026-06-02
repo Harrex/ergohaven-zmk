@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -10,10 +9,10 @@
 
         base {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R  &kp T                            &kp Y      &kp U     &kp I      &kp O     &kp P      &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D      &kp F  &kp G                            &kp H      &kp J     &kp K      &kp L     &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V  &kp B                            &kp N      &kp M     &kp COMMA  &kp DOT   &kp SLASH  &kp RSHFT
-                  &none  &kp GRAVE  &lt 1 ESC &kp SPACE  &kp LGUI    &kp RET  &lt 2 BSPC  &kp LALT  &kp LBKT   &kp RBKT
+&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T                           &kp Y       &kp U     &kp I      &kp O     &kp P      &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D      &kp F      &kp G                           &kp H       &kp J     &kp K      &kp L     &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B                           &kp N       &kp M     &kp COMMA  &kp DOT   &kp SLASH  &kp RSHFT
+                  &none  &kp GRAVE  &lt 1 ESC  &kp SPACE  &kp LGUI    &kp RET  &lt 2 BSPC  &kp LALT  &kp LBKT   &kp RBKT
             >;
 
             display-name = "Base";
@@ -26,7 +25,7 @@
 &trans  &kp N1    &kp N2  &kp N3    &kp N4      &kp N5                         &kp N6     &kp N7     &kp N8     &kp N9                &kp N0                 &kp MINUS
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPS   &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER
 &trans  &trans    &trans  &trans    &kp GRAVE   &kp TILDE                      &kp PIPE   &kp MINUS  &kp EQUAL  &kp LBKT              &kp RIGHT_BRACKET      &kp BACKSLASH
-                  &trans  &trans    &trans      &trans       &trans    &trans  &mo 3      &trans     &trans     &trans
+                  &trans  &trans    &trans      &trans       &trans    &trans  &lt 3 DEL  &trans     &trans     &trans
             >;
 
             display-name = "Nav";
